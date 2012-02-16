@@ -1,6 +1,10 @@
 export PATH="/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/local/mysql/bin:/Users/salbertson/bin:$PATH"
 export EDITOR="vim"
 
+alias ss="./script/server"
+alias sc="./script/console"
+alias ss="cd ~/apps/streamsend"
+
 function parse_git_dirty {
   git diff-index --quiet --cached HEAD --ignore-submodules -- 2> /dev/null && git diff-files --quiet --ignore-submodules 2> /dev/null || echo ' *'
 }
