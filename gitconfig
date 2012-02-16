@@ -1,0 +1,25 @@
+[user]
+  name = Scott Albertson
+  email = salbertson@ezpublishing.com
+
+[color]
+    status = auto
+    diff = auto
+    branch = auto
+
+[core]
+  excludesfile = /Users/salbertson/.gitignore
+
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = cyan
+
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    undo = reset --soft HEAD^
+
+[push]
+    default = tracking
