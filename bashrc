@@ -1,4 +1,4 @@
-export PATH="/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/local/mysql/bin:/Users/salbertson/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/mysql/bin:$PATH"
 export EDITOR="vim"
 
 function parse_git_dirty {
