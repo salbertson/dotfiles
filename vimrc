@@ -14,6 +14,7 @@ set autoindent " Auto indent next line
 set ruler " Show line number and column
 " set incsearch " Incremental search (highlight and move to first match while typing)
 set hlsearch
+set bs=2
 
 
 set background=dark
