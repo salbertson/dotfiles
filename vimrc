@@ -35,7 +35,7 @@ map ,l :call RunLastSpec()<CR>
 " spec support
 function! RunSpecFile()
   if InSpecFile()
-    let t:last_spec_file_command = "spec " . @% . " -cfn "
+    let t:last_spec_file_command = "time spec " . @% . " -cfn "
   endif
 
   call RunLastSpecFile()
@@ -43,7 +43,7 @@ endfunction
 
 function! RunNearestSpec()
   if InSpecFile()
-    let t:last_nearest_spec_command = "spec " . @% . " -cfn -l " . line(".")
+    let t:last_nearest_spec_command = "time spec " . @% . " -cfn -l " . line(".")
   endif
 
   call RunLastNearestSpec()
