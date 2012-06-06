@@ -31,11 +31,18 @@ map ,t :call RunSpecFile()<CR>
 map ,s :call RunNearestSpec()<CR>
 map ,l :call RunLastSpec()<CR>
 
-
 " spec support
+function! GuessSpecCommand()
+  if executable("rspec")
+    return "rspec"
+  else
+    return "spec"
+  endif
+endfunction
+
 function! RunSpecFile()
   if InSpecFile()
-    let t:last_spec_file_command = "time spec " . @% . " -cfn "
+    let t:last_spec_file_command = GuessSpecCommand() . " " . @% . " -cfn --debugger"
   endif
 
   call RunLastSpecFile()
@@ -43,7 +50,7 @@ endfunction
 
 function! RunNearestSpec()
   if InSpecFile()
-    let t:last_nearest_spec_command = "time spec " . @% . " -cfn -l " . line(".")
+    let t:last_nearest_spec_command = GuessSpecCommand() . " " . @% . " -cfn -l " . line(".") . " --debugger"
   endif
 
   call RunLastNearestSpec()
