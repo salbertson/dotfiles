@@ -18,6 +18,8 @@ set bs=2
 set wildmode=longest,list
 set splitbelow
 set splitright
+set wildignore=.git,*swp,*.log,sharedfs/*
+let g:CommandTMaxFiles=50000
 
 
 set background=dark
