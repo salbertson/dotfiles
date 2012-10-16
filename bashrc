@@ -1,4 +1,4 @@
-PATH=/usr/local/bin:$PATH # Make sure programs installed with brew get used first
+PATH=/usr/local/bin:/usr/local/sbin:$PATH # Make sure programs installed with brew get used first
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 function parse_git_dirty {
