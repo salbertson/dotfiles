@@ -44,7 +44,7 @@ endfunction
 
 function! RunSpecFile()
   if InSpecFile()
-    let t:last_spec_file_command = GuessSpecCommand() . " " . @% . " -cfn --debugger"
+    let t:last_spec_file_command = GuessSpecCommand() . " " . @% . " -cfn"
   endif
 
   call RunLastSpecFile()
@@ -52,7 +52,7 @@ endfunction
 
 function! RunNearestSpec()
   if InSpecFile()
-    let t:last_nearest_spec_command = GuessSpecCommand() . " " . @% . " -cfn -l " . line(".") . " --debugger"
+    let t:last_nearest_spec_command = GuessSpecCommand() . " " . @% . " -cfn -l " . line(".")
   endif
 
   call RunLastNearestSpec()
