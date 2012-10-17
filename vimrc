@@ -18,11 +18,13 @@ set bs=2
 set wildmode=longest,list
 set splitbelow
 set splitright
-
-
 set background=dark
 colorscheme railscasts
 "colo darkblue " Backup color scheme if 256 colors aren't available
+
+
+" ctrlp
+map <silent> <LocalLeader>t  :CtrlP<CR>
 
 
 " rspec mappings
@@ -30,9 +32,6 @@ colorscheme railscasts
 map ,t :call RunSpecFile()<CR>
 map ,s :call RunNearestSpec()<CR>
 map ,l :call RunLastSpec()<CR>
-
-" ctrlp
-map <silent> <LocalLeader>t  :CtrlP<CR>
 
 " spec support
 function! GuessSpecCommand()
