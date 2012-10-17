@@ -33,6 +33,9 @@ map ,t :call RunSpecFile()<CR>
 map ,s :call RunNearestSpec()<CR>
 map ,l :call RunLastSpec()<CR>
 
+" ctrlp
+map <silent> <LocalLeader>t  :CtrlP<CR>
+
 " spec support
 function! GuessSpecCommand()
   if executable("rspec")
