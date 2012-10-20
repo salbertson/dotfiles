@@ -1,5 +1,4 @@
-PATH=/usr/local/bin:/usr/local/sbin:$PATH # Make sure programs installed with brew get used first
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/.rvm/bin
 
 function parse_git_dirty {
   git diff-index --quiet --cached HEAD --ignore-submodules -- 2> /dev/null && git diff-files --quiet --ignore-submodules 2> /dev/null || echo ' *'
