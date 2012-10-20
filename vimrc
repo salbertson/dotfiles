@@ -27,6 +27,13 @@ colorscheme railscasts
 map <silent> <LocalLeader>t  :CtrlP<CR>
 
 
+" switch windows
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+map <C-h> <C-w>h
+
+
 " rspec mappings
 "map ,t :w\|!spec %<CR>
 map ,t :call RunSpecFile()<CR>
