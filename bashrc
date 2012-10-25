@@ -1,4 +1,5 @@
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/.rvm/bin
+export EDITOR=/usr/bin/vim
 
 function parse_git_dirty {
   git diff-index --quiet --cached HEAD --ignore-submodules -- 2> /dev/null && git diff-files --quiet --ignore-submodules 2> /dev/null || echo ' *'
