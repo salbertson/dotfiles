@@ -9,6 +9,7 @@ set bs=2
 set wildmode=longest,list
 set splitbelow
 set splitright
+set complete-=i " don't look in included files when autocompleting
 
 filetype off
 call pathogen#infect()
