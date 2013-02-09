@@ -6,10 +6,10 @@ map ,l :call RunLastSpec()<CR>
 
 " spec support
 function! GuessSpecCommand()
-  if executable("rspec")
-    return "rspec"
+  if executable("zeus")
+    return "zeus rspec"
   else
-    return "spec"
+    return "rspec"
   endif
 endfunction
 
