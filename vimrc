@@ -19,11 +19,6 @@ filetype plugin indent on
 colorscheme railscasts
 "colo darkblue " Backup color scheme if 256 colors aren't available
 
-" switch windows
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-map <C-h> <C-w>h
-
-source ~/.vim/rspec
-source ~/.vim/tab-complete
+source ~/.vim/mappings/window-navigation
+source ~/.vim/mappings/rspec
+source ~/.vim/mappings/tab-complete
