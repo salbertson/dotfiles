@@ -19,9 +19,6 @@ filetype plugin indent on
 colorscheme railscasts
 "colo darkblue " Backup color scheme if 256 colors aren't available
 
-" map \t to ctrlp
-map <silent> <LocalLeader>t  :CtrlP<CR>
-
 " switch windows
 map <C-j> <C-w>j
 map <C-k> <C-w>k
