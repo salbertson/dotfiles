@@ -1,2 +1,6 @@
 *.swp
 .rvmrc
+.powrc
+.env
+.rspec
+tags
