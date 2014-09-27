@@ -4,3 +4,5 @@
 .env
 .rspec
 tags
+tags.*
+dump.*
