@@ -3,6 +3,7 @@
 .powrc
 .env
 .rspec
+.ruby-version
 tags
 tags.*
 dump.*
