@@ -9,13 +9,13 @@ function! GuessSpecCommand()
   if executable("zeus")
     return "zeus rspec"
   else
-    return "rspec"
+    return "bundle exec rspec"
   endif
 endfunction
 
 function! RunSpecFile()
   if InSpecFile()
-    let t:last_spec_file_command = GuessSpecCommand() . " " . @% . " -cfn"
+    let t:last_spec_file_command = GuessSpecCommand() . " " . @%
   endif
 
   call RunLastSpecFile()
@@ -23,7 +23,7 @@ endfunction
 
 function! RunNearestSpec()
   if InSpecFile()
-    let t:last_nearest_spec_command = GuessSpecCommand() . " " . @% . " -cfn -l " . line(".")
+    let t:last_nearest_spec_command = GuessSpecCommand() . " " . @% . ":" . line(".")
   endif
 
   call RunLastNearestSpec()
