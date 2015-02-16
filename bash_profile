@@ -13,7 +13,7 @@ export PS1='\[\e[36m\]\u:\w\[\e[32m\]$(parse_git_branch)\[\e[36m\] \$ \[\e[m\]'
 
 alias vi='vim'
 
-eval "$(rbenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
