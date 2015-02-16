@@ -1,5 +1,5 @@
 export PATH=./bin:/usr/local/bin:/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
-export EDITOR=/usr/local/bin/vim
+export EDITOR=/usr/bin/vim
 
 function parse_git_dirty {
   git diff-index --quiet --cached HEAD --ignore-submodules -- 2> /dev/null && git diff-files --quiet --ignore-submodules 2> /dev/null || echo ' *'
