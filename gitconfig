@@ -1,6 +1,6 @@
 [user]
   name = Scott Albertson
-  email = scott@thoughtbot.com
+  email = ascottalbertson@gmail.com
 
 [color]
     status = auto
@@ -8,7 +8,7 @@
     branch = auto
 
 [core]
-  excludesfile = /Users/salbertson/.gitignore
+  excludesfile = /Users/scott/.gitignore
 
 [color "status"]
     added = green
