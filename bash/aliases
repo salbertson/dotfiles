@@ -1,3 +1,5 @@
+alias vi="vim"
+
 # Heroku staging
 alias staging-console='heroku run console --remote staging'
 alias staging-process='watch heroku ps --remote staging'
