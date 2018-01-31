@@ -9,15 +9,16 @@ function! GuessSpecCommand()
   if executable("zeus")
     return "zeus rspec"
   else
-    " return "bundle exec rspec"
-    return "bundle exec m"
+    " return "bundle exec rails test"
+    return "bundle exec rspec"
+    " return "bundle exec m"
   endif
 endfunction
 
 function! RunSpecFile()
   if InSpecFile()
-    " let t:last_spec_file_command = GuessSpecCommand() . " " . @%
-    let t:last_spec_file_command = GuessSpecCommand() . " TEST=" . @%
+    let t:last_spec_file_command = GuessSpecCommand() . " " . @%
+    " let t:last_spec_file_command = GuessSpecCommand() . " TEST=" . @%
   endif
 
   call RunLastSpecFile()
@@ -36,8 +37,8 @@ function! RunLastSpec()
 endfunction
 
 function! InSpecFile()
-  " return match(expand("%"), "_spec.rb$") != -1
-  return match(expand("%"), "_test.rb$") != -1
+  return match(expand("%"), "_spec.rb$") != -1
+  " return match(expand("%"), "_test.rb$") != -1
 endfunction
 
 function! RunLastNearestSpec()
