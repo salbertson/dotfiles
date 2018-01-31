@@ -1,3 +1,8 @@
+--ignore-file=is:tags
+--ignore-file=is:.byebug_history
+--ignore-dir=log/
+--ignore-dir=tmp/
+
 --type-add
 html=.haml
 --type-add
