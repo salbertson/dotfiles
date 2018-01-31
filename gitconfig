@@ -17,11 +17,13 @@
 
 [alias]
     st = status
-    ci = commit
+    c = commit
     co = checkout
     re = rebase
+    cp = cherry-pick
     undo = reset --soft HEAD^
     copr = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -
+    cont = rebase --continue
 
 [push]
     default = current
